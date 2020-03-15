@@ -15,6 +15,7 @@
 6. Run `go run main.go` or `./main`
 
 ## Environment Variables
+```
 export PORT=8080 -> Port used for running Go
 export DB_HOST=localhost -> Database Host
 export DB_USER=root -> Database username
@@ -22,6 +23,7 @@ export DB_PASS= -> Database password
 export DB_NAME=kumparan -> Database name
 export ES_HOST=http://localhost:9200 -> Elastic Search host
 export Q_PORT=localhost:6379 -> Redis host
+```
 
 ## Database
 1. Make sure to create database with the same name on Environment Variables `DB_NAME`
