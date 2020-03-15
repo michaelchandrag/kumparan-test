@@ -48,7 +48,7 @@ func (consumer *Consumer) Consume(delivery rmq.Delivery) {
 var queue rmq.Queue
 
 func main() {
-	connection := rmq.OpenConnection("kumparan", "tcp", fmt.Sprintf("localhost:%s", os.Getenv("Q_PORT")), 1)
+	connection := rmq.OpenConnection("kumparan", "tcp", fmt.Sprintf("%s", os.Getenv("Q_PORT")), 1)
 	queue = connection.OpenQueue("kumparan")
 	queue.StartConsuming(1000, 500*time.Millisecond)
 
